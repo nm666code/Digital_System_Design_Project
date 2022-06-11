@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.std_logic_arith.all;
+
+entity resetFloor is
+port (is_clean: in std_logic;
+		next_floor: in std_logic_vector(2 downto 0);
+		reset_floor: in std_logic_vector(4 downto 0));
+end resetFloor;
+
+architecture arcresetFloor of resetFloor is
+	signal cnt: std_logic_vector (3 downto 0);
+begin
+		process(is_clean, next_floor)
+			begin
+				if is_clean = '1' then
+					reset_floor <= "00001" when next_floor = "00001" else
+						"00010" when next_floor = "00010" else
+						"00100" when next_floor = "00100" else
+						"01000" when next_floor = "01000" else
+						"10000" when next_floor = "10000" ;
+				end if;
+			end process;
+end arcresetFloor;
