@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.NUMERIC_STD.ALL;
+
+entity HW6 is
+port (outside_bt_up : in std_logic_vector(3 downto 0);
+		outside_bt_down: in std_logic_vector(3 downto 0);
+		inside_bt : in std_logic_vector(5 downto 0);
+		floor_count : in std_logic;
+		motion: in std_logic;				--1:up, 0:down
+		next_floor: out std_logic_vector(2 downto 0);
+		is_open : out std_logic);
+end HW6;
+
+architecture testtest of HW6 is
+signal floor_temp :integer range 0 to 7  --0-4
+begin
+	process(floor_count, 
+			  outside_bt_down, 
+			  outside_bt_up, 
+			  inside_bt)
+	begin
+		floor_temp <= to_integer(unsigned(floor_count));
+		if(inside_bt != '00000')
+			if(motion = '1') then
+				l1 : for i in floor_temp to 4 loop
+					if(outside_bt_up(i) = '1')
+						
+			else
+				f <= b;
+			end if;
+		else
+		end if;
+	end process;
+end testtest;
+	
