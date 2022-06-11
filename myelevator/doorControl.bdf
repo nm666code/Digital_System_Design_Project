@@ -40,7 +40,7 @@ applicable agreement for further details.
 	(input)
 	(rect -472 -104 -304 -88)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "open" (rect 5 0 29 12)(font "Arial" ))
+	(text "open" (rect 5 0 28 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -56,7 +56,7 @@ applicable agreement for further details.
 	(input)
 	(rect -472 -48 -304 -32)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "close" (rect 5 0 31 12)(font "Arial" ))
+	(text "close" (rect 5 0 30 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -904,14 +904,14 @@ applicable agreement for further details.
 		(pt 136 32)
 		(output)
 		(text "y[7..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "y[7..0]" (rect 88 27 115 39)(font "Arial" ))
+		(text "y[7..0]" (rect 88 27 121 39)(font "Arial" ))
 		(line (pt 136 32)(pt 120 32)(line_width 3))
 	)
 	(port
 		(pt 136 48)
 		(output)
 		(text "reset" (rect 0 0 24 12)(font "Arial" ))
-		(text "reset" (rect 95 43 115 55)(font "Arial" ))
+		(text "reset" (rect 95 43 119 55)(font "Arial" ))
 		(line (pt 136 48)(pt 120 48))
 	)
 	(drawing
@@ -933,14 +933,14 @@ applicable agreement for further details.
 		(pt 136 32)
 		(output)
 		(text "z[7..0]" (rect 0 0 30 12)(font "Arial" ))
-		(text "z[7..0]" (rect 90 27 115 39)(font "Arial" ))
+		(text "z[7..0]" (rect 90 27 120 39)(font "Arial" ))
 		(line (pt 136 32)(pt 120 32)(line_width 3))
 	)
 	(port
 		(pt 136 48)
 		(output)
 		(text "reset" (rect 0 0 24 12)(font "Arial" ))
-		(text "reset" (rect 95 43 115 55)(font "Arial" ))
+		(text "reset" (rect 95 43 119 55)(font "Arial" ))
 		(line (pt 136 48)(pt 120 48))
 	)
 	(drawing
@@ -976,16 +976,8 @@ applicable agreement for further details.
 	(pt -128 -40)
 )
 (connector
-	(pt -128 -40)
-	(pt -56 -40)
-)
-(connector
 	(pt -152 -96)
 	(pt -104 -96)
-)
-(connector
-	(pt -104 -96)
-	(pt -56 -96)
 )
 (connector
 	(pt -304 -96)
@@ -1020,16 +1012,8 @@ applicable agreement for further details.
 	(pt -280 32)
 )
 (connector
-	(pt -280 32)
-	(pt -280 184)
-)
-(connector
 	(pt -248 -40)
 	(pt -248 136)
-)
-(connector
-	(pt -248 136)
-	(pt -248 184)
 )
 (connector
 	(pt -184 240)
@@ -1132,11 +1116,6 @@ applicable agreement for further details.
 	(pt 1184 264)
 )
 (connector
-	(text "y[7]" (rect 1272 237 1284 257)(font "Arial" )(vertical))
-	(pt 1288 272)
-	(pt 1288 152)
-)
-(connector
 	(text "z[6]" (rect 1152 239 1164 256)(font "Arial" )(vertical))
 	(pt 1168 48)
 	(pt 1168 264)
@@ -1147,39 +1126,8 @@ applicable agreement for further details.
 	(pt 1272 272)
 )
 (connector
-	(pt 752 152)
-	(pt 872 152)
-	(bus)
-)
-(connector
 	(pt 856 48)
 	(pt 976 48)
-	(bus)
-)
-(connector
-	(pt 872 152)
-	(pt 992 152)
-	(bus)
-)
-(connector
-	(pt 992 152)
-	(pt 1080 152)
-	(bus)
-)
-(connector
-	(text "y[7..0]" (rect 1130 136 1163 148)(font "Arial" ))
-	(pt 1080 152)
-	(pt 1184 152)
-	(bus)
-)
-(connector
-	(pt 1184 152)
-	(pt 1288 152)
-	(bus)
-)
-(connector
-	(pt 1288 152)
-	(pt 1464 152)
 	(bus)
 )
 (connector
@@ -1199,11 +1147,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1272 48)
-	(pt 1456 48)
-	(bus)
-)
-(connector
 	(pt 736 48)
 	(pt 856 48)
 	(bus)
@@ -1212,16 +1155,6 @@ applicable agreement for further details.
 	(text "<<__$DEF_ALIAS8951>>" (rect 480 309 492 432)(font "Arial" )(vertical)(invisible))
 	(pt 496 288)
 	(pt 496 312)
-)
-(connector
-	(text "z[0]" (rect 472 199 484 216)(font "Arial" )(vertical))
-	(pt 488 48)
-	(pt 488 224)
-)
-(connector
-	(pt 656 152)
-	(pt 752 152)
-	(bus)
 )
 (connector
 	(text "y[0]" (rect 488 197 500 217)(font "Arial" )(vertical))
@@ -1321,6 +1254,36 @@ applicable agreement for further details.
 	(pt 344 152)
 )
 (connector
+	(text "z[1]" (rect 624 207 636 224)(font "Arial" )(vertical))
+	(pt 640 48)
+	(pt 640 232)
+)
+(connector
+	(pt 480 168)
+	(pt 528 168)
+)
+(connector
+	(text "y[7]" (rect 1272 237 1284 257)(font "Arial" )(vertical))
+	(pt 1288 272)
+	(pt 1288 152)
+)
+(connector
+	(text "y[7..0]" (rect 1130 136 1163 148)(font "Arial" ))
+	(pt 1080 152)
+	(pt 1184 152)
+	(bus)
+)
+(connector
+	(pt 1184 152)
+	(pt 1288 152)
+	(bus)
+)
+(connector
+	(pt 992 152)
+	(pt 1080 152)
+	(bus)
+)
+(connector
 	(pt 480 152)
 	(pt 504 152)
 	(bus)
@@ -1331,9 +1294,23 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "z[1]" (rect 624 207 636 224)(font "Arial" )(vertical))
-	(pt 640 48)
-	(pt 640 232)
+	(pt 656 152)
+	(pt 752 152)
+	(bus)
+)
+(connector
+	(pt 752 152)
+	(pt 872 152)
+	(bus)
+)
+(connector
+	(pt 872 152)
+	(pt 992 152)
+	(bus)
+)
+(connector
+	(pt 256 48)
+	(pt 344 48)
 )
 (connector
 	(pt 640 48)
@@ -1341,12 +1318,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 480 168)
-	(pt 528 168)
-)
-(connector
-	(pt 256 48)
-	(pt 344 48)
+	(pt 480 64)
+	(pt 528 64)
 )
 (connector
 	(pt 480 48)
@@ -1359,14 +1332,11 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 480 64)
-	(pt 528 64)
+	(text "z[0]" (rect 472 199 484 216)(font "Arial" )(vertical))
+	(pt 488 224)
+	(pt 488 48)
 )
-(junction (pt -128 -40))
-(junction (pt -104 -96))
-(junction (pt -280 32))
 (junction (pt -280 -96))
-(junction (pt -248 136))
 (junction (pt -248 -40))
 (junction (pt 128 288))
 (junction (pt 640 48))
@@ -1380,10 +1350,7 @@ applicable agreement for further details.
 (junction (pt 1064 48))
 (junction (pt 1080 152))
 (junction (pt 1184 152))
-(junction (pt 1288 152))
 (junction (pt 1168 48))
-(junction (pt 1272 48))
-(junction (pt 488 48))
 (junction (pt 504 152))
 (junction (pt 112 544))
 (junction (pt 96 544))
@@ -1392,3 +1359,4 @@ applicable agreement for further details.
 (junction (pt 48 544))
 (junction (pt 24 544))
 (junction (pt 0 544))
+(junction (pt 488 48))

@@ -36,8 +36,8 @@
 # -------------------------------------------------------------------------- #
 
 
-set_global_assignment -name FAMILY "Cyclone IV GX"
-set_global_assignment -name DEVICE auto
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CEFA2F23C8
 set_global_assignment -name TOP_LEVEL_ENTITY myelevator
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:09:06  JUNE 10, 2022"
@@ -49,4 +49,41 @@ set_global_assignment -name BDF_FILE myelevator.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_W16 -to Clock
+set_location_assignment PIN_AA13 -to column[0]
+set_location_assignment PIN_AB12 -to column[1]
+set_location_assignment PIN_Y16 -to column[2]
+set_location_assignment PIN_AA12 -to DE[0]
+set_location_assignment PIN_AB11 -to DE[1]
+set_location_assignment PIN_AB10 -to DE[2]
+set_location_assignment PIN_AB7 -to 7_sec_a
+set_location_assignment PIN_AA7 -to 7_sec_b
+set_location_assignment PIN_AB6 -to 7_sec_c
+set_location_assignment PIN_AB5 -to 7_sec_d
+set_location_assignment PIN_AA9 -to 7_sec_e
+set_location_assignment PIN_Y9 -to 7_sec_f
+set_location_assignment PIN_AB8 -to 7_sec_g
+set_location_assignment PIN_N20 -to com
+set_location_assignment PIN_E2 -to LED1
+set_location_assignment PIN_D3 -to LED2
+set_location_assignment PIN_C2 -to LED3
+set_location_assignment PIN_C1 -to LED4
+set_location_assignment PIN_L2 -to LED5
+set_location_assignment PIN_L1 -to LED7
+set_location_assignment PIN_G2 -to LED8
+set_location_assignment PIN_G1 -to LED9
+set_location_assignment PIN_C13 -to pluse1
+set_location_assignment PIN_C16 -to pluse3
+set_location_assignment PIN_N2 -to pluse4
+set_location_assignment PIN_AA15 -to sw1
+set_location_assignment PIN_AA14 -to sw2
+set_location_assignment PIN_AB18 -to sw3
+set_location_assignment PIN_AA18 -to sw4
+set_location_assignment PIN_AB17 -to sw5
+set_location_assignment PIN_AA17 -to sw6
+set_location_assignment PIN_AB20 -to sw7
+set_location_assignment PIN_AA20 -to sw8
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

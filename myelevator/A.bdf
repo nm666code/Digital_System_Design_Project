@@ -4,27 +4,26 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Copyright (C) 1991-2013 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus II License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (pin
 	(input)
 	(rect 216 72 232 240)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "a0" (rect 4 5 16 17)(font "Arial" )(vertical))
+	(text "a0" (rect 4 5 16 16)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -41,7 +40,7 @@ agreement for further details.
 	(input)
 	(rect 248 72 264 240)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "a1" (rect 4 5 16 17)(font "Arial" )(vertical))
+	(text "a1" (rect 4 5 16 16)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -58,7 +57,7 @@ agreement for further details.
 	(input)
 	(rect 288 72 304 240)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "a2" (rect 4 5 16 17)(font "Arial" )(vertical))
+	(text "a2" (rect 4 5 16 16)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -75,7 +74,7 @@ agreement for further details.
 	(input)
 	(rect 320 72 336 240)
 	(text "INPUT" (rect 6 125 16 153)(font "Arial" (font_size 6))(vertical))
-	(text "a3" (rect 5 5 17 17)(font "Arial" )(vertical))
+	(text "a3" (rect 5 5 17 16)(font "Arial" )(vertical))
 	(pt 8 168)
 	(drawing
 		(line (pt 4 84)(pt 4 109))
@@ -476,10 +475,6 @@ agreement for further details.
 	(pt 480 256)
 )
 (connector
-	(pt 480 256)
-	(pt 728 256)
-)
-(connector
 	(pt 504 336)
 	(pt 504 488)
 )
@@ -528,10 +523,6 @@ agreement for further details.
 	(pt 528 376)
 )
 (connector
-	(pt 224 664)
-	(pt 768 664)
-)
-(connector
 	(pt 296 672)
 	(pt 768 672)
 )
@@ -556,22 +547,6 @@ agreement for further details.
 	(pt 544 376)
 )
 (connector
-	(pt 544 376)
-	(pt 728 376)
-)
-(connector
-	(pt 256 600)
-	(pt 256 824)
-)
-(connector
-	(pt 296 672)
-	(pt 296 824)
-)
-(connector
-	(pt 224 664)
-	(pt 224 832)
-)
-(connector
 	(pt 568 296)
 	(pt 568 728)
 )
@@ -582,10 +557,6 @@ agreement for further details.
 (connector
 	(pt 456 296)
 	(pt 568 296)
-)
-(connector
-	(pt 568 296)
-	(pt 728 296)
 )
 (connector
 	(pt 592 336)
@@ -600,20 +571,12 @@ agreement for further details.
 	(pt 592 336)
 )
 (connector
-	(pt 592 336)
-	(pt 728 336)
-)
-(connector
 	(pt 768 744)
 	(pt 328 744)
 )
 (connector
 	(pt 328 376)
 	(pt 328 744)
-)
-(connector
-	(pt 328 744)
-	(pt 328 832)
 )
 (connector
 	(pt 1072 624)
@@ -671,19 +634,15 @@ agreement for further details.
 	(pt 904 624)
 	(pt 968 624)
 )
+(connector
+	(pt 224 664)
+	(pt 768 664)
+)
 (junction (pt 224 256))
 (junction (pt 256 296))
 (junction (pt 328 376))
 (junction (pt 296 336))
-(junction (pt 480 256))
 (junction (pt 504 336))
 (junction (pt 256 536))
 (junction (pt 296 552))
 (junction (pt 528 376))
-(junction (pt 256 600))
-(junction (pt 544 376))
-(junction (pt 224 664))
-(junction (pt 296 672))
-(junction (pt 568 296))
-(junction (pt 592 336))
-(junction (pt 328 744))
