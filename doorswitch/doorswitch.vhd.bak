@@ -1,0 +1,57 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity doorswitch is
+port (is_clean: in std_logic;
+		clk: in std_logic;
+		open: in std_logic;
+		close: in std_logic;
+		a: out std_logic;
+		b: out std_logic;
+		already_close: out std_logic;
+		reset_open: out std_logic;
+		reset_close: out std_logic);
+end doorswitch;
+
+architecture arcdoorswitch of doorswitch is
+	signal cnt : std_logic_vector(3 downto 0);
+begin
+	if is_clean = 0 then
+		already_close <= 0;
+	end if;
+		process(isClean, open, close, clk)
+			begin
+				if clk' event and clk ='1' then
+					if open = '1' and already_close = '0' then
+						a <= '0';
+						b <= '1';
+						if cnt > 6 then
+							cnt <= '0';
+							reset_open <= '1';
+						end if
+					end if
+					else if close = '1' and already_close = '0' then
+						a <= '1';
+						b <= '0';
+						if cnt > 6 then
+							cnt <= '0';
+							reset_close <= '1';
+							already_close <= '1';
+						end if
+					end if
+					else if isClean = '1' and already_close = '0' then
+						if cnt < 6 then
+							a <= '0';
+							b <= '1';
+						elsif cnt > 8 then
+							a <= '1';
+							b <= '0';
+						end if;
+						if cnt > 12 then
+							cnt <= '0';
+							already_close <= '1';
+					end if
+					cnt <= cnt + 1;
+				end if;
+			end process;
+end arcdoorswitch;

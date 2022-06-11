@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/norma/Downloads/Digital_System_Design_Project-main/doorswitch/doorswitch.vhd
+source_file = 1, C:/Users/norma/Downloads/Digital_System_Design_Project-main/doorswitch/Block1.bdf
+source_file = 1, C:/Users/norma/Downloads/Digital_System_Design_Project-main/doorswitch/db/doorswitch.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = doorswitch
+instance = comp, \setOpen~output\, setOpen~output, doorswitch, 1
+instance = comp, \setClose~output\, setClose~output, doorswitch, 1
+instance = comp, \is_clean~input\, is_clean~input, doorswitch, 1
+instance = comp, \clk~input\, clk~input, doorswitch, 1
