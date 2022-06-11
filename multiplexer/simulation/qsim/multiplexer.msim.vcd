@@ -1,0 +1,106 @@
+$comment
+	File created using the following command:
+		vcd file multiplexer.msim.vcd -direction
+$end
+$date
+	Fri Jun 03 14:44:26 2022
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module multiplexer_vlg_vec_tst $end
+$var reg 5 ! a [4:0] $end
+$var wire 1 " f [3] $end
+$var wire 1 # f [2] $end
+$var wire 1 $ f [1] $end
+$var wire 1 % f [0] $end
+$var wire 1 & sampler $end
+$scope module i1 $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) unknown $end
+$var tri1 1 * devclrn $end
+$var tri1 1 + devpor $end
+$var tri1 1 , devoe $end
+$var wire 1 - f[0]~output_o $end
+$var wire 1 . f[1]~output_o $end
+$var wire 1 / f[2]~output_o $end
+$var wire 1 0 f[3]~output_o $end
+$var wire 1 1 a[4]~input_o $end
+$var wire 1 2 a[1]~input_o $end
+$var wire 1 3 a[3]~input_o $end
+$var wire 1 4 a[0]~input_o $end
+$var wire 1 5 a[2]~input_o $end
+$var wire 1 6 f[3]~0_combout $end
+$var wire 1 7 f[3]~2_combout $end
+$var wire 1 8 Equal3~0_combout $end
+$var wire 1 9 Equal2~0_combout $end
+$var wire 1 : Equal4~0_combout $end
+$var wire 1 ; Equal2~1_combout $end
+$var wire 1 < f[3]~1_combout $end
+$var wire 1 = comb~30_combout $end
+$var wire 1 > comb~32_combout $end
+$var wire 1 ? comb~31_combout $end
+$var wire 1 @ f[0]$latch~combout $end
+$var wire 1 A comb~19_combout $end
+$var wire 1 B comb~35_combout $end
+$var wire 1 C comb~3_combout $end
+$var wire 1 D comb~33_combout $end
+$var wire 1 E f[1]$latch~combout $end
+$var wire 1 F comb~10_combout $end
+$var wire 1 G comb~34_combout $end
+$var wire 1 H comb~27_combout $end
+$var wire 1 I comb~36_combout $end
+$var wire 1 J f[2]$latch~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 !
+1%
+0$
+0#
+0"
+x&
+0'
+1(
+x)
+1*
+1+
+1,
+1-
+0.
+0/
+00
+01
+02
+03
+14
+05
+06
+07
+08
+19
+0:
+1;
+1<
+0=
+1>
+0?
+1@
+0A
+0B
+1C
+1D
+0E
+0F
+0G
+1H
+1I
+0J
+$end
+#1000000
