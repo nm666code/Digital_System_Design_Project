@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\project\motion\simulation\qsim
+vmotion
+Z1 !s100 LH5>Rd?`Q8?BJSE48;X7A0
+Z2 I@0e@zm3iMd82J4Ej4N35[3
+Z3 VNcoGWA[MTZJ153hRJ9]b:1
+Z4 dC:\altera\project\motion\simulation\qsim
+Z5 w1654521507
+Z6 8motion.vo
+Z7 Fmotion.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|motion.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1654521507.856000
+Z12 !s107 motion.vo|
+!s101 -O0
+vmotion_vlg_check_tst
+!i10b 1
+Z13 !s100 ha]M8kQ:9eVkXMn`:n8W]1
+Z14 IYSiTi0NOfgG5KicY=;MCO1
+Z15 VY[?3XG?JDj8fol=::0:dE0
+R4
+Z16 w1654521505
+Z17 8Waveform.vwf.vt
+Z18 FWaveform.vwf.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z19 !s108 1654521507.906000
+Z20 !s107 Waveform.vwf.vt|
+Z21 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R10
+vmotion_vlg_sample_tst
+!i10b 1
+Z22 !s100 395:0fh]<`QK31@coJ4=i3
+Z23 ILiAK4C14eZB9;MY0lEbj^0
+Z24 VZK_`MGjS49Eh_z=Q[63:B1
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vmotion_vlg_vec_tst
+!i10b 1
+!s100 Nc;I9MQOO:nm=VbdZ63aA0
+IA]DQag:BK?Q]l]DO1`mk>1
+Z25 VcK>`PkH=Ph=CfeGD0gidE0
+R4
+R16
+R17
+R18
+Z26 L0 171
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

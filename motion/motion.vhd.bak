@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+
+entity counter09 is
+port(
+	presentFloor: in std_logic_vector(4 downto 0);
+	nextFloor: in std_logic_vector(4 downto 0);
+	motion:out std_logic_vector(1 downto 0)
+	);
+end counter09;
+
+architecture oo of counter09 is
+
+begin
+	if presentFloor > nextFloor then
+		motion <= "01";
+		else if presentFloor < nextFloor then
+			motion <= "10";
+			else
+				motion <= "00";
+end oo;
